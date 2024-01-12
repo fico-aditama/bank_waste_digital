@@ -26,7 +26,7 @@
             <div class="col mt-5 py-4">
                 <h2 class="mb-3">Login</h2>
                 <p class="mb-5">Prepare yourself for a cleaner earth</p>
-                <form action="" method="">
+                <form action="" method="POST">
                     @csrf
                     <div class="form-floating mb-3 w-75">
                         <input type="email" class="form-control bg-transparent" name="email" id="email"
@@ -44,7 +44,10 @@
                     </div>
                     <button class="btn btn-block btn-warning btn-lg mb-3 w-75">SIGN IN</button>
                 </form>
-                <button class="btn w-75">Forgot Password</button>
+                <button class="btn w-75" style="color: #fbfff4">Forgot Password</button>
+                <span class="d-flex justify-content-center w-75">
+                    <p>Don't have an account? <a href="/signup" style="color: #fbfff4">Register</a></p>
+                </span>
             </div>
         </div>
     </div>

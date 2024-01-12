@@ -26,12 +26,12 @@
             <div class="col mt-5 py-4">
                 <h2 class="mb-3">Register</h2>
                 <p class="mb-5">Join for a cleaner earth</p>
-                <form action="" method="">
+                <form action="" method="POST">
                     @csrf
                     <div class="form-floating mb-3 w-75">
-                        <input type="text" class="form-control bg-transparent" name="nama" id="nama"
+                        <input type="text" class="form-control bg-transparent" name="name" id="name"
                             placeholder="Your Name">
-                        <label for="nama" class="ms-3 opacity-25">Your Name</label>
+                        <label for="name" class="ms-3 opacity-25">Your Name</label>
                     </div>
                     <div class="form-floating mb-3 w-75">
                         <input type="email" class="form-control bg-transparent" name="email" id="email"
@@ -50,7 +50,7 @@
                     <button class="btn btn-block btn-warning btn-lg mb-3 w-75">SIGN UP</button>
                 </form>
                 <span class="d-flex justify-content-center w-75">
-                    <p class="">Already have an account? <a href="#" style="color: #fbfff4">Login</a></p>
+                    <p>Already have an account? <a href="/signin" style="color: #fbfff4">Login</a></p>
                 </span>
             </div>
         </div>

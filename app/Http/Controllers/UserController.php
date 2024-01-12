@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('login');
+        return view('register');
     }
 
     /**
@@ -35,7 +35,7 @@ class UserController extends Controller
         $user->password = Hash::make($request->password);
         $user->save();
 
-        return redirect('/login');
+        return redirect('/signin');
     }
 
     /**
