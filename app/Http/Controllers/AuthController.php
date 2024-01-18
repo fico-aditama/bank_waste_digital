@@ -31,9 +31,9 @@ class AuthController extends Controller
         ];
 
         if (Auth::attempt($infoLogin)) {
-            return redirect('/home');
+            return redirect('/');
         } else {
-            return redirect('/signin')->withErrors('Email or password is incorrect')->withInput();
+            return redirect('/login')->withErrors('Email or password is incorrect')->withInput();
         }
     }
 }

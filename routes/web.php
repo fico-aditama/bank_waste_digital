@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('register');
-// });
+Route::get('/', function () {
+    return view('landingPage');
+});
 
-Route::get('/signin', [AuthController::class,'index']);
-Route::post('/signin', [AuthController::class, 'login'])->name('login');
-Route::get('/signup', [UserController::class,'index']);
-Route::post('/signup', [UserController::class,'store'])->name('signup');
+Route::get('/login', [AuthController::class,'index']);
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/registration', [UserController::class,'index']);
+Route::post('/registration', [UserController::class,'store'])->name('signup');
